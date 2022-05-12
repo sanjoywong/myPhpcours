@@ -52,6 +52,16 @@ echo '<hr>';
 foreach($fruits as $fruit){
     echo $fruit.'<br>';
 };
+// construire une tableau $nombres à l'aide la boucle for contenant des nombres de 14 à 78
+$nombres = array();
+$nombres = [];
+
+for($i=0,$j=14;$i<65;$i++,$j++){
+    // array_push($nombres,$j);
+    $nombres[]= $i + 14; 
+};
+echo '<hr>';
+var_dump($nombres) ;
 //echo $tableau;
 // echo 'Le moyenne de notes est : '.$moy;
 echo '</pre>'
