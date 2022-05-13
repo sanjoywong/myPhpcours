@@ -96,7 +96,7 @@ echo $html;
 // Creer un tableau $notes avec un prenom => une note
 // Afficher une liste ul des eleves et leur notes
 // Marc a obtenu 15/20
-$notes = ['Michael'=>10,'Lucie'=>9,'Meuloud'=>16];
+$notes = ['Mouel'=>10,'Lumme'=>9,'Meulandie'=>16];
 $notes['Marc'] = 15;
 $html = '<ul>';
 foreach($notes as  $key=>$value){
@@ -106,9 +106,94 @@ foreach($notes as  $key=>$value){
 $html .= '</ul>';
 echo $html;
 
+//$ages = ['Michael'=>20,'Lucie'=>12,'Meuloud'=>56];
 
-//var_dump($ages);
-//echo $tableau;
-// echo 'Le moyenne de notes est : '.$moy;
-echo '</pre>'
+$tab4 = array_merge($ages,$notes);
+asort($tab4);
+print_r($tab4);
+
+$planetes = ['mars','terre','pluton','venus','jupiter'];
+/* print_r($planetes);
+echo '<hr>';
+asort($planetes); // tri des valeurs d'un tableau par ordre
+print_r($planetes); */
+
+print_r($planetes);
+echo '<hr>';
+arsort($planetes); // tri des valeurs d'un tableau par ordre
+print_r($planetes);
+//rsort
+//arsort
+//ksort()
+//krsort
+
+// Créer un tableau avec les mois de l'annnée
+// - afficher la valeur de la 5eme ligne de ce tableau
+// - afficher la valeur de l'index 10
+// - modifier le mois d'avril en le mettant en majuscule
+
+// $mois = ['janvier','fevrier','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','decembre'];
+// echo 'La 5eme ligne de ce tableau est : ' . $mois[4] .'<br>' ;
+// echo 'La valeur de l\'index 10 est : ' . $mois[10] . '<br>';
+// echo '<hr>';
+// $mois[3] = 'AVRIL';
+// $mois[3] = strtoupper($mois[3]);
+
+// 
+
+ $tab = [
+     'voiture' => 'ford',
+     'nombre' => [1,2,3,4],
+     'planete' => ['mars','terre']
+ ];
+ echo 'La valeur du tableau tab est 1. '.'<hr>';
+ print_r($tab);
+
+ $tab = [];
+ $tab[] = ['A','B','C'];
+ $tab[] = ['Q','R','T'];
+ $tab[] = ['E','U','P','I'];
+ echo 'La valeur du tableau tab est 2.'.'<hr>';
+ print_r($tab);
+ echo ' c\'est fini !<hr>';
+ //echo $tab['planete'][0];
+ 
+// Ecrire le mot CEPPIC
+
+// echo $tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2];
+
+// $tab2 = [
+//     [0,1],
+//     [
+//         2,
+//         [2,3]
+//     ]
+//     ];
+// // echo $tab2[1][1][1];
+
+$produits = [
+    ['nom' => 'chausettes', 'prix' => 10],
+    ['nom' => 'velo', 'prix' => 500],
+    ['nom' => 'carotte', 'prix' => 2],
+    ['nom' => 'boulon', 'prix' => 9],
+];
+print_r($produits);
+// Boucler sur le tableau produits (foreach) en affichant le nom du produit et le prix selon le modele :
+//    'nom du produit' : 'prix' €
+// dans une liste ul , le 'nom du produit' dans un h3 et le prix dans un p
+echo '</pre>';
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Produits</title>
+</head>
+<body>
+ <h1>Produits</h1>
+    
+</body>
+</html>
+
