@@ -181,6 +181,22 @@ print_r($produits);
 // Boucler sur le tableau produits (foreach) en affichant le nom du produit et le prix selon le modele :
 //    'nom du produit' : 'prix' €
 // dans une liste ul , le 'nom du produit' dans un h3 et le prix dans un p
+/* echo 'La valeur du tableau produits : '.'<hr>';
+foreach($produits as $key=>$vale ){
+
+     //print_r($vale);
+    echo  '<h3>'.$vale['nom'].'</h3>';
+    echo  '<p>'.$vale['prix'].' € '.'</p>';
+
+    //echo  $valeur[0].' : '.$valeur[1].' € '.'<hr>';
+
+} */
+
+
+
+
+
+
 echo '</pre>';
 ?>
 <!DOCTYPE html>
@@ -193,6 +209,25 @@ echo '</pre>';
 </head>
 <body>
  <h1>Produits</h1>
+ 
+<!-- 
+   <?php
+     foreach($produits as $key=>$vale ){
+
+       echo  '<h3>'.$vale['nom'].'</h3>';
+       echo  '<p>'.$vale['prix'].' € '.'</p>';  
+    }; 
+    ?>
+     --> 
+
+    <ul>
+    <?php foreach($produits as $produit ){ ?>
+         <li>
+            <h3><?php echo $produit['nom']; ?></h3>
+            <p><?php echo $produit['prix']; ?>  €</p>  
+        </li>
+        <?php } ?>
+    </ul>
     
 </body>
 </html>

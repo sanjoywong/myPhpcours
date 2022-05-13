@@ -7,6 +7,7 @@
     <li><a href="./03-tableaux/index.php">03 Tableaux(array)</a>
 <ul>
     <li><a href="https://www.php.net/manual/fr/book.array.php">Doc php array</a></li>
+    <li><a href="./03-tableau/php-json.php"> php - json</a></li>
 </ul>
 </li>
 </ul>
