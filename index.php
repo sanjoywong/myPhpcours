@@ -9,5 +9,6 @@
     <li><a href="https://www.php.net/manual/fr/book.array.php">Doc php array</a></li>
     <li><a href="./03-tableau/php-json.php"> php - json</a></li>
 </ul>
+    <li><a href="./04-conditions/index.php">Conditions</a></li>
 </li>
 </ul>
