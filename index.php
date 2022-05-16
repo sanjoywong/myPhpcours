@@ -10,5 +10,6 @@
     <li><a href="./03-tableau/php-json.php"> php - json</a></li>
 </ul>
     <li><a href="./04-conditions/index.php">Conditions</a></li>
+    <li><a href="./05-boucles/index.php">Boucles</a></li>
 </li>
 </ul>

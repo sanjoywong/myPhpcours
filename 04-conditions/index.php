@@ -134,13 +134,18 @@ if(isset($articles[0])){
     echo "il n'y a pas d'articles";
 };
 echo '<hr>';
-$articles=[101];
+// $articles=[1];
 
 if(!empty($articles[0])){
-    echo " l'article à l'index 0 n'est pas vide";
+    echo " l'article à l'index 0 n'est pas vide hqhhq";
     var_dump($articles[0]);
 }else{
     echo "il n'y a pas d'articles!";
 };
-
+echo '<hr>';
+// operateur ternaire
+//condition ? true: false
+// echo !empty($articles[0]) ? $articles[0] : "il n'y a pas d'articles!";
+ $premierArticle = !empty($articles[0]) ? $articles[0] : "il n'y a pas d'articles!";
+ echo $premierArticle;
 ?>
