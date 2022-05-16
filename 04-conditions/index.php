@@ -133,5 +133,13 @@ if(isset($articles[0])){
 }else{
     echo "il n'y a pas d'articles";
 };
+echo '<hr>';
+$articles=[101];
+
+if(isset($articles[0])){
+    echo " l'article à l'index 0 n'est pas vide";
+}else{
+    echo "il n'y a pas d'articles";
+};
 
 ?>
