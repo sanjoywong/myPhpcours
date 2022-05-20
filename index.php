@@ -20,6 +20,7 @@
         </li>
         <li><a href="./04-conditions/">Conditions</a></li>
         <li><a href="./05-boucles/index.php">Boucles</a></li>
+        <li><a href="./travaux/travail-00.php">travail-00</a></li>
     </ul>
 </body>
 
