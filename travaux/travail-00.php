@@ -19,6 +19,6 @@ foreach ($tabs as $key => $value) {
         echo "$value est pair <br>";
     } else {
         echo "$value est impair <br>";
-    }
+    };
     
 }
