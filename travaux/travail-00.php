@@ -11,3 +11,14 @@
 etc ...
  */
  
+$tabs = [27,15,34,379,248,5643,81,211,999,142,300,572];
+
+foreach ($tabs as $key => $value) {
+    
+    if (($value%2)==0) {
+        echo "$value est pair <br>";
+    } else {
+        echo "$value est impair <br>";
+    }
+    ;
+}
