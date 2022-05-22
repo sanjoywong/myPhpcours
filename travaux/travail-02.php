@@ -55,8 +55,10 @@ Vous trouverez une capture du resultat attendu.
                       $string=implode(',',$personne->tags);
                       ?>
                       <p>Tags : <?=$string  ?></p>
-        
-                <?php  } ?>
+                      
+                <?php echo '<hr>'; } ?>
+
+                
             </article>
   </body>
   </html>
