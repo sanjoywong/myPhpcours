@@ -1,4 +1,7 @@
 <?php
+
+$ami_json = json_decode(file_get_contents('./persons.json'));
+
 /*
 Travail-02 :
 
@@ -20,3 +23,40 @@ Travail-02 :
 
 Vous trouverez une capture du resultat attendu.
  */
+//var_dump($ami_json);
+//print_r($ami_json);
+//echo $ami_json[0]->name;
+?>
+  <!DOCTYPE html>
+  <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>le(a) deuxieme ami(e) de Raymond Jimenez</title>
+        </head>
+        <body>
+            <h3><?=$ami_json[2]->friends[1]->name ?></h3>
+            <p>La couleur des yeux de Ball Shaffer est : <strong><?=$ami_json[1]->eyeColor ?>.</strong></p>
+            <article>
+                
+                <?php foreach ($ami_json as $personne) { 
+                    echo '<hr>'; ?>
+                    <img src=<?=$personne->picture ?> alt="">
+                    <p>Nom : <?=$personne->name  ?></p>
+                    <p>Age : <?=$personne->age  ?></p>
+                    <p>Couleur des yeux : <?=$personne->eyeColor  ?></p>
+                    <p>Email : <?=$personne->email  ?></p>
+                    <p>Fruit favori : <?=$personne->favoriteFruit  ?></p>
+                    <?php 
+                      if($personne->isActive){
+                          echo '<p>ACTIF</p>';
+                      };
+                      $string=implode(',',$personne->tags);
+                      ?>
+                      <p>Tags : <?=$string  ?></p>
+        
+                <?php  } ?>
+            </article>
+  </body>
+  </html>
