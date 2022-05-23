@@ -42,6 +42,11 @@ foreach ($tabs as $degre) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    table, th, td {
+    border:1px solid black;
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,5 +65,22 @@ foreach ($tabs as $degre) {
        ?>
         <ul>|  <?=$newStr1 ?>°C |  <?=$degreF ?>°F  |</ul>
         <?php } ?>
+
+        <table style="width:50%">
+            <tr>
+            <th>°C</th>
+            <th>°F</th>
+            </tr>
+            <?php foreach($tabs as $degre) { 
+                  $degreF = round(($degre*1.8)+32);
+                  $newStr1 = str_pad($degre,2,"0",STR_PAD_LEFT);
+            ?>
+            <tr>
+            <td style="text-align:center"><?=$newStr1 ?>°C</td> 
+            <td style="text-align:center"> <?=$degreF ?>°F </td>
+            </tr>
+        <?php } ?>
+
+        </table>
 </body>
 </html>
