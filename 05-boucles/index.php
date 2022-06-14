@@ -35,7 +35,7 @@
     // $anne1++;
     // }
 ?>   
-<!-- <li>Le nombre de jour depuis 1970 est : <strong><?=$nbJour - 365;?></strong></li> -->
+<!-- <li>Le nombre de jour duis 1970 est : <strong><?=$nbJour - 365;?></strong></li> -->
 </ul>
 </body>
 </html>

@@ -1,6 +1,9 @@
 <?php
 
 $ami_json = json_decode(file_get_contents('./persons.json'));
+$json_obj = file_get_contents("./persons.json");
+// $persons = json_decode($json_obj,true);
+$persons = json_decode($json_obj, true);
 
 /*
 Travail-02 :
@@ -23,7 +26,13 @@ Travail-02 :
 
 Vous trouverez une capture du resultat attendu.
  */
-//var_dump($ami_json);
+var_dump($ami_json);
+echo "<hr>";
+print_r($persons);
+echo "<hr>";
+
+
+// echo "Le test est ";
 //print_r($ami_json);
 //echo $ami_json[0]->name;
 ?>
@@ -37,6 +46,7 @@ Vous trouverez une capture du resultat attendu.
         </head>
         <body>
             <h3><?=$ami_json[2]->friends[1]->name ?></h3>
+       
             <p>La couleur des yeux de Ball Shaffer est : <strong><?=$ami_json[1]->eyeColor ?>.</strong></p>
             <article>
                 

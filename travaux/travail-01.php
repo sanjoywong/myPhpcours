@@ -46,6 +46,9 @@ foreach ($tabs as $degre) {
     table, th, td {
     border:1px solid black;
     }
+    td{
+        padding: auto;
+    }
 </style>
 <head>
     <meta charset="UTF-8">
